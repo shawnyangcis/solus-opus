@@ -1,0 +1,117 @@
+:root {
+    --bg: #faf9f7;
+    --text: #2c2c2c;
+    --text-light: #666;
+    --accent: #1a1a1a;
+    --border: #e8e6e3;
+    --max-width: 680px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Georgia", "Noto Serif SC", "Source Han Serif SC", serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    font-size: 17px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 4rem 1.5rem 2rem;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: var(--accent);
+}
+
+header .tagline {
+    font-size: 0.95rem;
+    color: var(--text-light);
+    margin-top: 0.3rem;
+    font-style: italic;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    width: 100%;
+    flex: 1;
+}
+
+.essays h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.essays .empty {
+    color: var(--text-light);
+    font-style: italic;
+    padding: 2rem 0;
+}
+
+footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2rem 1.5rem 3rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+/* Essay page specific */
+.essay-header {
+    margin-bottom: 2.5rem;
+}
+
+.essay-header h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.4;
+    margin-bottom: 0.5rem;
+}
+
+.essay-meta {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+.essay-content p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+}
+
+.essay-content blockquote {
+    border-left: 3px solid var(--border);
+    padding-left: 1.2rem;
+    margin: 1.5rem 0;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    body { font-size: 16px; }
+    header { padding: 2.5rem 1.2rem 1.5rem; }
+    main { padding: 0 1.2rem; }
+}
