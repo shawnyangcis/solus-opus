@@ -63,6 +63,22 @@ main {
     letter-spacing: 0.01em;
 }
 
+.essays .link {
+    margin-top: 1rem;
+}
+
+.essays .link a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.95rem;
+    border-bottom: 1px solid var(--border);
+    transition: border-color 0.2s;
+}
+
+.essays .link a:hover {
+    border-color: var(--accent);
+}
+
 .essays h2 {
     font-size: 1.1rem;
     font-weight: 400;
